@@ -2,7 +2,7 @@ version: '3'
 
 services:
   db:
-    image: node_worldcup:0.0.1
+    image: postgres:12
     container_name: node_worldcup
     restart: always
     environment:

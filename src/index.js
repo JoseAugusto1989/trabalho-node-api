@@ -7,17 +7,4 @@ const app = express()
 app.use(express.json())
 app.use('/api/v1/worldcup', router)
 
-
-
-(async () => {
-    try {
-        await sequelize.sync(
-            {force: false}
-        );
-        console.log('testing...');
-        app.listen(PORT, () => console.log(`Server up on PORT ${PORT}`))
-    } catch (error) {
-        console.log(error);
-    }
-}
-)()
+app.listen(PORT, () => console.log(`Server up on PORT ${PORT}`))
