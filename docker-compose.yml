@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    image: node_worldcup:0.0.1
+    container_name: node_worldcup
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=worldcup
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - '5432:5432'
+
+  app: 
+    build: .
+    command: npm start
+    ports: 
+      - '8084:8084'
+    volumes: 
+      - .:/usr/app
+    depends_on:
+      - db
