@@ -12,3 +12,4 @@ INSERT INTO match (id, team_home, team_visitor, score_home, score_visitor, match
 INSERT INTO match (id, team_home, team_visitor, score_home, score_visitor, match_date) values (3, 'Portugal', 'Espanha', 2, 0, '2022-11-05');
 INSERT INTO match (id, team_home, team_visitor, score_home, score_visitor, match_date) values (4, 'França', 'Suíça', 0, 0, '2022-11-10');
 INSERT INTO match (id, team_home, team_visitor, score_home, score_visitor, match_date) values (5, 'Suíça', 'Brasil', 0, 0, '2022-11-15');
+INSERT INTO match (id, team_home, team_visitor, score_home, score_visitor, match_date) values (6, 'Alemanha', 'Georgia', 3, 0, '2022-10-12');

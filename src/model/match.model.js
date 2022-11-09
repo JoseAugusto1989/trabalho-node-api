@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
         match_date: DataTypes.DATE
     }, {
         timestamps: false,
-        freezeTableName: false
+        freezeTableName: true
     })
 
     return Match
