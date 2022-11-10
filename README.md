@@ -27,7 +27,7 @@ npm install
 # Criar a imagem na maquina
 
 ```
-docker build . -t joseaugustooliveirapins/api-node-worldcup
+docker build -t joseaugustooliveirapins/api-node-worldcup .
 docker run -p 8084:8084 joseaugustooliveirapins/api-node-worldcup
 ```
 
