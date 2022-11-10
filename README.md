@@ -21,6 +21,10 @@ npm install
 subir o projeto utilizando o docker compose:
 docker-compose up
 
+# Download da imagem do Docker hub
+
+docker pull joseaugustooliveirapins/api-node-worldcup
+
 # API Node
 
 Endpoint POST:
