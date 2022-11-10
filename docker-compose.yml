@@ -15,7 +15,7 @@ services:
       - '5432:5432'
 
   app: 
-    build: .
+    image: joseaugustooliveirapins/api-node-worldcup
     command: npm start
     ports: 
       - '8084:8084'
